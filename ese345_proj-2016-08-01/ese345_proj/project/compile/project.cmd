@@ -1,0 +1,1 @@
+-w -s "C:\My_Designs\ese345_proj\library.cfg"  -j "C:\My_Designs\ese345_proj\project\projlib.cfg"  -d "C:\My_Designs\ese345_proj\project\compile"   -work project  -O3 -e 100 -2002 "C:\My_Designs\ese345_proj\project\src\alu.vhd"

@@ -1,0 +1,277 @@
+timestamp=1417427605172
+
+[abs_diff]
+A/abs_diff=21|./../src/abs_diff.vhd|39|1*102011
+BinI32/abs_diff=3*14907
+I=0*20548
+I/abs_diff=0*40120
+M=11|0|vb4|1417421605857|./../src/abs_diff.vhd|0*20177*0x5006ea81112f9e8b8cdf8312358f3005357a1973|0*20467*0x5eebbfaf24833dd780412b1f91e05209
+M/abs_diff=21|0|vb4|1417424483023|./../src/abs_diff.vhd|0*20712*0x97c3803a1136eeb217f9f3b869997f5da59c760d|0*22405*0x856b180bf611ec746a6bfcb1befebd18
+R=./../src/abs_diff.vhd|29
+Version=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+Version/abs_diff=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+
+[alu]
+A/alu=21|./../src/alu.vhd|39|1*143847
+BinI32/alu=3*22207
+I=0*49817
+I/alu=0*51621
+M=11|0|vb4|1417427522806|./../src/alu.vhd|0*49452*0x1202a4a86ce33cb1a6aa89f4839090573cce874f|0*49746*0x5eebbfaf24833dd780412b1f91e05209
+M/alu=21|0|vb4|1417427604953|./../src/alu.vhd|0*49914*0x1c18928a9804cb3473bd0a4fd27870f9b1b3221f|0*51543*0x856b180bf611ec746a6bfcb1befebd18
+R=./../src/alu.vhd|28
+Version=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+Version/alu=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+
+[alu_logic]
+A/alu_logic=21|./../src/alu_logic.vhd|44|1*118237
+BinI32/alu_logic=3*20545
+I=0*31953
+I/alu_logic=0*41153
+M=11|0|vb4|1417421607272|./../src/alu_logic.vhd|0*31447*0x3167041934f3be5591452706f43980239716950a|0*31870*0x5eebbfaf24833dd780412b1f91e05209
+M/alu_logic=21|0|vb4|1417424484382|./../src/alu_logic.vhd|0*32118*0x4e72b8e703e0dfdbd7932e55874a83dfeef41ec6|0*33065*0x856b180bf611ec746a6bfcb1befebd18
+R=./../src/alu_logic.vhd|29
+Version=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+Version/alu_logic=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+
+[and_64]
+A/and_64=21|./../src/and_64.vhd|38|1*105837
+BinI32/and_64=3*16378
+I=0*23194
+I/and_64=0*40293
+M=11|0|vb4|1417421606060|./../src/and_64.vhd|0*22861*0xa1a11d6ee8157512d89c2a50b20fde63a83c3979|0*23117*0x5eebbfaf24833dd780412b1f91e05209
+M/and_64=21|0|vb4|1417424483225|./../src/and_64.vhd|0*23294*0x91f0647033a911219030ed08d02b2a9173cdba5d|0*23440*0x856b180bf611ec746a6bfcb1befebd18
+R=./../src/and_64.vhd|28
+Version=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+Version/and_64=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+
+[bit_full_adder_cg]
+A/bit_full_adder_cg=21|./../src/bit_full_adder_cg.vhd|37|1*76346
+BinI32/bit_full_adder_cg=3*11358
+I=0*6243
+I/bit_full_adder_cg=0*38484
+M=11|0|vb4|1417421604245|./../src/bit_full_adder_cg.vhd|0*5889*0x8c1fdfdd89f5d4035e265270a8cc0c529f0f0912|0*6144*0x5eebbfaf24833dd780412b1f91e05209
+M/bit_full_adder_cg=21|0|vb4|1417424481219|./../src/bit_full_adder_cg.vhd|0*6354*0x1f9d75f202c323841c8f3a3fc5bca366cd9ffd99|0*6714*0x856b180bf611ec746a6bfcb1befebd18
+R=./../src/bit_full_adder_cg.vhd|28
+Version=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+Version/bit_full_adder_cg=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+
+[bit_half_adder]
+A/mixed=21|./../src/bit_half_adder.vhd|35|1*75222
+BinI32/mixed=3*11028
+I=0*5073
+I/mixed=0*38370
+M=11|0|vb4|1417421604042|./../src/bit_half_adder.vhd|0*4735*0x346a92aea0a1664a0bb680ad9ab2762c471b3f08|0*4980*0x5eebbfaf24833dd780412b1f91e05209
+M/mixed=21|0|vb4|1417424481016|./../src/bit_half_adder.vhd|0*5181*0x661100766590e180fe7a96befbc9fb44ef337f5e|0*5433*0x856b180bf611ec746a6bfcb1befebd18
+R=./../src/bit_half_adder.vhd|28
+Version=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+Version/mixed=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+
+[cl_logic]
+A/cl_logic=21|./../src/cl_logic.vhd|41|1*77966
+BinI32/cl_logic=3*11633
+I=0*7694
+I/cl_logic=0*38675
+M=11|0|vb4|1417421604421|./../src/cl_logic.vhd|0*7283*0x0c77d92a4671babcf7230eeeae9d2d349e55d735|0*7613*0x5eebbfaf24833dd780412b1f91e05209
+M/cl_logic=21|0|vb4|1417424481422|./../src/cl_logic.vhd|0*7796*0x460bd585edfff56e6c5b31572c308bb2f6277721|0*8349*0x856b180bf611ec746a6bfcb1befebd18
+R=./../src/cl_logic.vhd|28
+Version=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+Version/cl_logic=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+
+[cl_test]
+A/cl_test=*21|./../src/cl_test.vhd|34|
+
+[cla_16]
+A/cla_16=21|./../src/cla_16.vhd|41|1*84494
+BinI32/cla_16=3*12654
+I=0*11248
+I/cla_16=0*39011
+M=11|0|vb4|1417421604801|./../src/cla_16.vhd|0*10851*0xe1597e171d5ad6009bdfa9e53f25de405445be82|0*11171*0x5eebbfaf24833dd780412b1f91e05209
+M/cla_16=21|0|vb4|1417424481810|./../src/cla_16.vhd|0*11348*0x41a6ce932c4bb4b4aed2e8eaed65c4773bd1c813|0*12208*0x856b180bf611ec746a6bfcb1befebd18
+R=./../src/cla_16.vhd|28
+Version=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+Version/cla_16=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+
+[cla_16_test]
+A/cla_16_test=*21|./../src/cla_16_test.vhd|34|
+
+[cla_4]
+A/cla_4=21|./../src/cla_4.vhd|41|1*80225
+BinI32/cla_4=3*12275
+I=0*9190
+I/cla_4=0*38786
+M=11|0|vb4|1417421604613|./../src/cla_4.vhd|0*8800*0x69037d881fc1efe383bf1daf7f4421bd227dd06a|0*9115*0x5eebbfaf24833dd780412b1f91e05209
+M/cla_4=21|0|vb4|1417424481623|./../src/cla_4.vhd|0*9289*0x0b2d81cf9563deb12b09f8aaaecdf20bd2cdadd3|0*10289*0x856b180bf611ec746a6bfcb1befebd18
+R=./../src/cla_4.vhd|28
+Version=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+Version/cla_4=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+
+[cla_64]
+A/cla_64=21|./../src/cla_64.vhd|16|1*92351
+BinI32/cla_64=3*13499
+I=0*15949
+I/cla_64=0*39621
+M=11|0|vb4|1417421605357|./../src/cla_64.vhd|0*15523*0x0eb44892dc67bfc8dc87a671ee6b292f7893a3f8|0*15872*0x5eebbfaf24833dd780412b1f91e05209
+M/cla_64=21|0|vb4|1417424482599|./../src/cla_64.vhd|0*16049*0x8be07159651ff52b4a6c1fdfefa0a224b2ae35fa|0*17658*0x856b180bf611ec746a6bfcb1befebd18
+R=./../src/cla_64.vhd|4
+Version=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+Version/cla_64=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+
+[cla_64_test]
+A/cla_64_test=*21|./../src/cla_64_test.vhd|35|
+
+[cla_test]
+A/cla_test=*21|./../src/cla_test.vhd|34|
+
+[count_lead_zero]
+A/count_lead_zero=21|./../src/count_lead_zero.vhd|38|1*109810
+BinI32/count_lead_zero=3*17581
+I=0*26105
+I/count_lead_zero=0*40612
+M=11|0|vb4|1417421606647|./../src/count_lead_zero.vhd|0*25725*0xcb20f282ef0d1e3fd6da4b9d7d3654d00d09664c|0*26010*0x5eebbfaf24833dd780412b1f91e05209
+M/count_lead_zero=21|0|vb4|1417424483788|./../src/count_lead_zero.vhd|0*26276*0x8cb456d0a59c0e23a51fff4ec4d3e7688c35f4f2|0*26980*0x856b180bf611ec746a6bfcb1befebd18
+R=./../src/count_lead_zero.vhd|29
+Version=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+Version/count_lead_zero=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+
+[count_ones]
+A/count_ones=21|./../src/count_ones.vhd|38|1*112112
+BinI32/count_ones=3*18371
+I=0*27802
+I/count_ones=0*40799
+M=11|0|vb4|1417421606850|./../src/count_ones.vhd|0*27452*0xac4b53f3712e891fdc60f841787d841c764e560d|0*27717*0x5eebbfaf24833dd780412b1f91e05209
+M/count_ones=21|0|vb4|1417424483976|./../src/count_ones.vhd|0*27968*0x51ca298b761be23b2bed7728567b452540bffe5b|0*29405*0x856b180bf611ec746a6bfcb1befebd18
+R=./../src/count_ones.vhd|29
+Version=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+Version/count_ones=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+
+[multiply]
+A/multiply=21|./../src/multiply.vhd|39|1*138280
+BinI32/multiply=3*21192
+I=0*18638
+I/multiply=0*47605
+M=11|0|vb4|1417421605545|./../src/multiply.vhd|0*18267*0x4c13be29e6df792d458e36992b35416b3c7fe216|0*18557*0x5eebbfaf24833dd780412b1f91e05209
+M/multiply=21|0|vb4|1417425235466|./../src/multiply.vhd|0*46953*0x80a84467f689fda06bcdab01ba7ebe880018f843|0*47512*0x856b180bf611ec746a6bfcb1befebd18
+R=./../src/multiply.vhd|29
+Version=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+Version/multiply=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+
+[mux_16_2_1]
+A/mux_16_2_1=21|./../src/mux_16_2_1.vhd|39|1*90921
+BinI32/mux_16_2_1=3*13288
+I=0*14744
+I/mux_16_2_1=0*39506
+M=11|0|vb4|1417421605175|./../src/mux_16_2_1.vhd|0*14368*0x485bcf23ea8dd6652ad960c488c2613271333345|0*14659*0x5eebbfaf24833dd780412b1f91e05209
+M/mux_16_2_1=21|0|vb4|1417424482406|./../src/mux_16_2_1.vhd|0*14848*0x10b0ccaa830d758f5ed0c93bf350f6ed855ab76e|0*15029*0x856b180bf611ec746a6bfcb1befebd18
+R=./../src/mux_16_2_1.vhd|28
+Version=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+Version/mux_16_2_1=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+
+[mux_2_1]
+A/mux_2_1=21|./../src/mux_2_1.vhd|39|1*89897
+BinI32/mux_2_1=3*13061
+I=0*13686
+I/mux_2_1=0*39397
+M=11|0|vb4|1417421604988|./../src/mux_2_1.vhd|0*13370*0x85f041320da6296cd4c4b13a076c7d56fd5c8884|0*13607*0x5eebbfaf24833dd780412b1f91e05209
+M/mux_2_1=21|0|vb4|1417424482233|./../src/mux_2_1.vhd|0*13787*0x1328826a48404020f65e8f45b4ef74bef015c943|0*13949*0x856b180bf611ec746a6bfcb1befebd18
+R=./../src/mux_2_1.vhd|28
+Version=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+Version/mux_2_1=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+
+[mux_8_2_1]
+A/mux_8_2_1=*21|./../src/mux_8_2_1.vhd|39|
+
+[or_64]
+A/or_64=21|./../src/or_64.vhd|38|1*107163
+BinI32/or_64=3*16780
+I=0*24148
+I/or_64=0*40400
+M=11|0|vb4|1417421606248|./../src/or_64.vhd|0*23821*0xffbdaba08f5e652ea980f86cee5097b7a7b8186f|0*24073*0x5eebbfaf24833dd780412b1f91e05209
+M/or_64=21|0|vb4|1417424483412|./../src/or_64.vhd|0*24247*0x29bf8cbcca4a0d20a92d0ceb31b7915b4aeb5f0c|0*24387*0x856b180bf611ec746a6bfcb1befebd18
+R=./../src/or_64.vhd|28
+Version=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+Version/or_64=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+
+[sat_logic]
+A/sat_logic=21|./../src/sat_logic.vhd|38|1*87484
+BinI32/sat_logic=3*12845
+I=0*13095
+I/sat_logic=0*39226
+M=11|0|vb4|1417421604972|./../src/sat_logic.vhd|0*12741*0x5c6ce9006f2e1614f4d143f36b05c5263740113f|0*13012*0x5eebbfaf24833dd780412b1f91e05209
+M/sat_logic=21|0|vb4|1417424482016|./../src/sat_logic.vhd|0*33336*0x3bcc84280aa8867bffe84122030e3a0a6670b6ec|0*33819*0x856b180bf611ec746a6bfcb1befebd18
+R=./../src/sat_logic.vhd|28
+Version=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+Version/sat_logic=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+
+[shft_left]
+A/shft_left=21|./../src/shft_left.vhd|39|1*141779
+BinI32/shft_left=3*21714
+I=0*48354
+I/shft_left=0*49022
+M=11|0|vb4|1417426181431|./../src/shft_left.vhd|0*47977*0x2af9cbc8ef091042ad48a2e54cd83c25d3d672a7|0*48271*0x5eebbfaf24833dd780412b1f91e05209
+M/shft_left=21|0|vb4|1417426181447|./../src/shft_left.vhd|0*48519*0x5b1881cc62f2d5f494486b1fe693dd8fe6dd7f9b|0*48926*0x856b180bf611ec746a6bfcb1befebd18
+R=./../src/shft_left.vhd|29
+Version=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+Version/shft_left=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+
+[shift_left]
+A/shift_left=21|./../src/shift_left.vhd|39|1*116164
+BinI32/shift_left=3*20051
+I=0*30266
+I/shift_left=0*40976
+M=11|0|vb4|1417421607069|./../src/shift_left.vhd|0*29883*0xb6eca5f2a1ccbd417c7566078e05d389cdf0eadc|0*30181*0x5eebbfaf24833dd780412b1f91e05209
+M/shift_left=21|0|vb4|1417424484179|./../src/shift_left.vhd|0*30432*0x3c54f507ecba5aaf628bfc40d29f69a5ea9fe392|0*30845*0x856b180bf611ec746a6bfcb1befebd18
+R=./../src/shift_left.vhd|29
+Version=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+Version/shift_left=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+
+[testbench]
+A/behavior=*21|./../src/half_adder_test.vhd|32|
+
+[xor_64]
+A/xor_64=21|./../src/xor_64.vhd|38|1*108484
+BinI32/xor_64=3*17180
+I=0*25099
+I/xor_64=0*40505
+M=11|0|vb4|1417421606459|./../src/xor_64.vhd|0*24766*0x7fb5f94a86949f2aa980855c8d67fb33149ffaa8|0*25022*0x5eebbfaf24833dd780412b1f91e05209
+M/xor_64=21|0|vb4|1417424483600|./../src/xor_64.vhd|0*25199*0x051c0e246b078a571db74d62eb9b698c7518fb93|0*25345*0x856b180bf611ec746a6bfcb1befebd18
+R=./../src/xor_64.vhd|28
+Version=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+Version/xor_64=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+
+[~A]
+ModifyID=1459
+Version=73
+
+[~MFT]
+0=250|0project.mgf|51621|17995
+1=79|1project.mgf|143847|97448
+3=79|3project.mgf|22207|12092
+
+[~U]
+abs_diff=11|0*19981|
+alu=11|0*49197|
+alu_logic=11|0*31121|
+and_64=11|0*22671|
+bit_full_adder_cg=11|0*5649|
+bit_half_adder=11|0*4531|
+cl_logic=11|0*7025|
+cl_test=11|0*1414|
+cla_16=11|0*10598|
+cla_16_test=11|0*1734|
+cla_4=11|0*8553|
+cla_64=11|0*15243|
+cla_64_test=11|0*2340|
+cla_test=11|0*2419|
+count_lead_zero=11|0*25539|
+count_ones=11|0*27281|
+multiply=11|0*18071|
+mux_16_2_1=11|0*14148|
+mux_2_1=11|0*13198|
+mux_8_2_1=11|0*3434|
+or_64=11|0*23634|
+sat_logic=11|0*12510|
+shft_left=11|0*47778|
+shift_left=11|0*29681|
+testbench=11|0*4268|
+xor_64=11|0*24576|
+

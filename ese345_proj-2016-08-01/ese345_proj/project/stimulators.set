@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XML>
+ <document type="stimulators" version="1">
+  <set name="ASDB Stimulators" active="0">
+   <stimulator>
+    <signal_path value="/cla_64/a"/>
+    <rawdescription value="VAL:FRM:Override:1111111111111111111111111111111100000000000000001111111111111111:&lt;= 1111111111111111111111111111111100000000000000001111111111111111:1:"/>
+   </stimulator>
+   <stimulator>
+    <signal_path value="/cla_64/b"/>
+    <rawdescription value="VAL:FRM:Override:0000000000000001000000000000000100000000000000010000000000000001:&lt;= 0000000000000001000000000000000100000000000000010000000000000001:1:"/>
+   </stimulator>
+   <stimulator>
+    <signal_path value="/cla_64/c_in"/>
+    <rawdescription value="KEY:KEY:Override:67/0,1:C:0:"/>
+   </stimulator>
+  </set>
+  <set name="ASDB Stimulators 1" active="1">
+   <stimulator>
+    <signal_path value="/multiply/a"/>
+    <rawdescription value="VAL:FRM:Override:0000000000000000111111111111111100000000000000000000000000000001:&lt;= 0000000000000000111111111111111100000000000000000000000000000001:1:"/>
+   </stimulator>
+   <stimulator>
+    <signal_path value="/multiply/b"/>
+    <rawdescription value="VAL:FRM:Override:0000000000000000000000000000010000000000000000000000000000000100:&lt;= 0000000000000000000000000000010000000000000000000000000000000100:0:"/>
+   </stimulator>
+  </set>
+ </document>
+</XML>

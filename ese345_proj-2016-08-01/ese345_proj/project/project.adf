@@ -1,0 +1,108 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=project
+
+[Library]
+project=.\project\project.lib
+
+[Settings]
+AccessRead=1
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=0
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=0
+NetlistCompilation=1
+EnableVHDL93Key=0
+EnableVHDL2002Key=1
+EnableVHDL2008Key=0
+DisableVHDL87Key=0
+Syntax RelaxLRM=0
+MaxErrorsKey=100
+OptimizationLevel=3
+DisableRangeChecks=0
+ProtectLevel=0
+IncrementalCompilation=0
+AdditionalOptions=
+
+[$LibMap$]
+project=.
+Active_lib=
+
+[Files]
+/bit_half_adder.vhd=-1
+/bit_full_adder_cg.vhd=-1
+/cl_logic.vhd=-1
+/cla_4.vhd=-1
+/cla_16.vhd=-1
+/sat_logic.vhd=-1
+/mux_2_1.vhd=-1
+/mux_16_2_1.vhd=-1
+/cla_64.vhd=-1
+/multiply.vhd=-1
+/abs_diff.vhd=-1
+/and_64.vhd=-1
+/or_64.vhd=-1
+/xor_64.vhd=-1
+/count_lead_zero.vhd=-1
+/count_ones.vhd=-1
+/shft_left.vhd=-1
+/alu_logic.vhd=-1
+/alu.vhd=-1
+/half_adder_test.vhd=-1
+/cl_test.vhd=-1
+/cla_test.vhd=-1
+/cla_16_test.vhd=-1
+/cla_64_test.vhd=-1
+
+[Files.Data]
+.\src\bit_half_adder.vhd=VHDL Source Code
+.\src\bit_full_adder_cg.vhd=VHDL Source Code
+.\src\cl_logic.vhd=VHDL Source Code
+.\src\cla_4.vhd=VHDL Source Code
+.\src\cla_16.vhd=VHDL Source Code
+.\src\sat_logic.vhd=VHDL Source Code
+.\src\mux_2_1.vhd=VHDL Source Code
+.\src\mux_16_2_1.vhd=VHDL Source Code
+.\src\cla_64.vhd=VHDL Source Code
+.\src\multiply.vhd=VHDL Source Code
+.\src\abs_diff.vhd=VHDL Source Code
+.\src\and_64.vhd=VHDL Source Code
+.\src\or_64.vhd=VHDL Source Code
+.\src\xor_64.vhd=VHDL Source Code
+.\src\count_lead_zero.vhd=VHDL Source Code
+.\src\count_ones.vhd=VHDL Source Code
+.\src\shft_left.vhd=VHDL Source Code
+.\src\alu_logic.vhd=VHDL Source Code
+.\src\alu.vhd=VHDL Source Code
+.\src\half_adder_test.vhd=VHDL Source Code
+.\src\cl_test.vhd=VHDL Source Code
+.\src\cla_test.vhd=VHDL Source Code
+.\src\cla_16_test.vhd=VHDL Source Code
+.\src\cla_64_test.vhd=VHDL Source Code
+
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation=multiply|multiply|0 
+ShowHide=ShowTopLevel
+Selected=

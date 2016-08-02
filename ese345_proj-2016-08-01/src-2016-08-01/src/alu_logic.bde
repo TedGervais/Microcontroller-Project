@@ -1,0 +1,653 @@
+SCHM0104
+
+HEADER
+{
+ FREEID 70
+ VARIABLES
+ {
+  #ARCHITECTURE="alu_logic"
+  #BLOCKTABLE_FILE="#HDL2DIAGRAM.bde"
+  #ENTITY="alu_logic"
+  #LANGUAGE="VHDL"
+  AUTHOR=""
+  COMPANY=""
+  CREATIONDATE="12/2/2014"
+  SOURCE=".\\..\\src\\alu_logic.vhd"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  MARGINS (200,200,200,200)
+  RECT (0,0,0,0)
+ }
+ 
+ BODY
+ {
+  VHDLDESIGNUNITHDR  1, 0, 0
+  {
+   LABEL "Design Unit Header"
+   TEXT 
+"library ieee;\n"+
+"        use ieee.std_logic_1164.all;\n"+
+"        use ieee.NUMERIC_STD.all;"
+   RECT (220,260,620,472)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  PROCESS  2, 0, 0
+  {
+   LABEL "decode"
+   TEXT 
+"decode : process (opcode)\n"+
+"                         variable decode_op : std_logic_vector(3 downto 0);\n"+
+"                       begin\n"+
+"                         decode_op := opcode;\n"+
+"                         no_op <= '0';\n"+
+"                         ari_log <= '-';\n"+
+"                         lv <= '-';\n"+
+"                         sixteen <= '-';\n"+
+"                         sat <= '-';\n"+
+"                         log_op <= \"---\";\n"+
+"                         ari_op <= \"--\";\n"+
+"                         if (decode_op = \"1111\") then\n"+
+"                            no_op <= '1';\n"+
+"                         elsif (decode_op(3) = '1') then\n"+
+"                            ari_log <= '1';\n"+
+"                            if (decode_op(2 downto 0) = \"110\") then\n"+
+"                               lv <= '1';\n"+
+"                            else \n"+
+"                               log_op <= opcode(2 downto 0);\n"+
+"                            end if;\n"+
+"                         elsif (decode_op(3) = '0') then\n"+
+"                            ari_log <= '0';\n"+
+"                            if (decode_op(2 downto 1) = \"01\") then\n"+
+"                               sat <= '1';\n"+
+"                            else \n"+
+"                               sat <= '0';\n"+
+"                            end if;\n"+
+"                            if (decode_op(2 downto 1) = \"10\") or (decode_op(2 downto 1) = \"01\") then\n"+
+"                               sixteen <= '1';\n"+
+"                            else \n"+
+"                               sixteen <= '0';\n"+
+"                            end if;\n"+
+"                            if (decode_op = \"0111\") or (decode_op = \"0101\") or (decode_op = \"0011\") then\n"+
+"                               ari_op <= \"00\";\n"+
+"                            elsif (decode_op = \"0110\") or (decode_op = \"0100\") or (decode_op = \"0010\") then\n"+
+"                               ari_op <= \"01\";\n"+
+"                            elsif (decode_op = \"0001\") then\n"+
+"                               ari_op <= \"10\";\n"+
+"                            else \n"+
+"                               ari_op <= \"11\";\n"+
+"                            end if;\n"+
+"                         end if;\n"+
+"                       end process;\n"+
+"                      "
+   RECT (1020,240,1421,640)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWTEXT
+   VTX (  37, 41, 44, 47, 49, 52, 56, 62 )
+   VARIABLES
+   {
+    #UPDATE_SENS_LIST="0"
+   }
+   LIST (  62 )
+  }
+  INSTANCE  3, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Output"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="ari_log"
+    #SYMBOL="Output"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   COORD (1520,260)
+   VERTEXES ( (2,38) )
+  }
+  INSTANCE  4, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusOutput"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="ari_op(1:0)"
+    #SYMBOL="BusOutput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (1520,300)
+   VERTEXES ( (2,40) )
+  }
+  INSTANCE  5, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusOutput"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="log_op(2:0)"
+    #SYMBOL="BusOutput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (1520,340)
+   VERTEXES ( (2,43) )
+  }
+  INSTANCE  6, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Output"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="lv"
+    #SYMBOL="Output"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   COORD (1520,380)
+   VERTEXES ( (2,46) )
+  }
+  INSTANCE  7, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Output"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="no_op"
+    #SYMBOL="Output"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   COORD (1520,420)
+   VERTEXES ( (2,50) )
+  }
+  INSTANCE  8, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="opcode(3:0)"
+    #SYMBOL="BusInput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (880,260)
+   VERTEXES ( (2,61) )
+  }
+  PROCESS  9, 0, 0
+  {
+   LABEL "sub_of_gen"
+   TEXT 
+"sub_of_gen : process (rs1,rs2)\n"+
+"                         variable diff_temp : std_logic_vector(16 downto 0);\n"+
+"                         variable sub_of_temp : std_logic_vector(3 downto 0);\n"+
+"                       begin\n"+
+"                         diff_temp := std_logic_vector(unsigned('0' & rs1(63 downto 48)) - unsigned('0' & rs2(63 downto 48)));\n"+
+"                         sub_of_temp(3) := diff_temp(16);\n"+
+"                         diff_temp := std_logic_vector(unsigned('0' & rs1(47 downto 32)) - unsigned('0' & rs2(47 downto 32)));\n"+
+"                         sub_of_temp(2) := diff_temp(16);\n"+
+"                         diff_temp := std_logic_vector(unsigned('0' & rs1(31 downto 16)) - unsigned('0' & rs2(31 downto 16)));\n"+
+"                         sub_of_temp(1) := diff_temp(16);\n"+
+"                         diff_temp := std_logic_vector(unsigned('0' & rs1(15 downto 0)) - unsigned('0' & rs2(15 downto 0)));\n"+
+"                         sub_of_temp(0) := diff_temp(16);\n"+
+"                         sub_of <= sub_of_temp;\n"+
+"                       end process;\n"+
+"                      "
+   RECT (1020,660,1421,1060)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWTEXT
+   VTX (  58, 64, 68 )
+   VARIABLES
+   {
+    #UPDATE_SENS_LIST="0"
+   }
+   LIST (  64, 68 )
+  }
+  INSTANCE  10, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="rs1(63:0)"
+    #SYMBOL="BusInput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (880,680)
+   VERTEXES ( (2,65) )
+  }
+  INSTANCE  11, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="rs2(63:0)"
+    #SYMBOL="BusInput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (880,720)
+   VERTEXES ( (2,67) )
+  }
+  INSTANCE  12, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Output"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="sat"
+    #SYMBOL="Output"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   COORD (1520,460)
+   VERTEXES ( (2,53) )
+  }
+  INSTANCE  13, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Output"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="sixteen"
+    #SYMBOL="Output"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   COORD (1520,500)
+   VERTEXES ( (2,55) )
+  }
+  INSTANCE  14, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusOutput"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="sub_of(3:0)"
+    #SYMBOL="BusOutput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (1520,680)
+   VERTEXES ( (2,59) )
+  }
+  TEXT  15, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1572,260,1572,260)
+   ALIGN 4
+   PARENT 3
+  }
+  TEXT  16, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1572,300,1572,300)
+   ALIGN 4
+   PARENT 4
+  }
+  TEXT  17, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1572,340,1572,340)
+   ALIGN 4
+   PARENT 5
+  }
+  TEXT  18, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1572,380,1572,380)
+   ALIGN 4
+   PARENT 6
+  }
+  TEXT  19, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1572,420,1572,420)
+   ALIGN 4
+   PARENT 7
+  }
+  TEXT  20, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (828,260,828,260)
+   ALIGN 6
+   PARENT 8
+  }
+  TEXT  21, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (828,680,828,680)
+   ALIGN 6
+   PARENT 10
+  }
+  TEXT  22, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (828,720,828,720)
+   ALIGN 6
+   PARENT 11
+  }
+  TEXT  23, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1572,460,1572,460)
+   ALIGN 4
+   PARENT 12
+  }
+  TEXT  24, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1572,500,1572,500)
+   ALIGN 4
+   PARENT 13
+  }
+  TEXT  25, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1572,680,1572,680)
+   ALIGN 4
+   PARENT 14
+  }
+  NET WIRE  26, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="ari_log"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+  }
+  NET BUS  27, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="ari_op(1:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  NET BUS  28, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="log_op(2:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  NET WIRE  29, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="lv"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+  }
+  NET WIRE  30, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="no_op"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+  }
+  NET BUS  31, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="opcode(3:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  NET BUS  32, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="rs1(63:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  NET BUS  33, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="rs2(63:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  NET WIRE  34, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="sat"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+  }
+  NET WIRE  35, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="sixteen"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+  }
+  NET BUS  36, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="sub_of(3:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  VTX  37, 0, 0
+  {
+   COORD (1421,260)
+  }
+  VTX  38, 0, 0
+  {
+   COORD (1520,260)
+  }
+  WIRE  39, 0, 0
+  {
+   NET 26
+   VTX 37, 38
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  VTX  40, 0, 0
+  {
+   COORD (1520,300)
+  }
+  VTX  41, 0, 0
+  {
+   COORD (1421,300)
+  }
+  BUS  42, 0, 0
+  {
+   NET 27
+   VTX 40, 41
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  VTX  43, 0, 0
+  {
+   COORD (1520,340)
+  }
+  VTX  44, 0, 0
+  {
+   COORD (1421,340)
+  }
+  BUS  45, 0, 0
+  {
+   NET 28
+   VTX 43, 44
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  VTX  46, 0, 0
+  {
+   COORD (1520,380)
+  }
+  VTX  47, 0, 0
+  {
+   COORD (1421,380)
+  }
+  WIRE  48, 0, 0
+  {
+   NET 29
+   VTX 46, 47
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  VTX  49, 0, 0
+  {
+   COORD (1421,420)
+  }
+  VTX  50, 0, 0
+  {
+   COORD (1520,420)
+  }
+  WIRE  51, 0, 0
+  {
+   NET 30
+   VTX 49, 50
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  VTX  52, 0, 0
+  {
+   COORD (1421,460)
+  }
+  VTX  53, 0, 0
+  {
+   COORD (1520,460)
+  }
+  WIRE  54, 0, 0
+  {
+   NET 34
+   VTX 52, 53
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  VTX  55, 0, 0
+  {
+   COORD (1520,500)
+  }
+  VTX  56, 0, 0
+  {
+   COORD (1421,500)
+  }
+  WIRE  57, 0, 0
+  {
+   NET 35
+   VTX 55, 56
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  VTX  58, 0, 0
+  {
+   COORD (1421,680)
+  }
+  VTX  59, 0, 0
+  {
+   COORD (1520,680)
+  }
+  BUS  60, 0, 0
+  {
+   NET 36
+   VTX 58, 59
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  VTX  61, 0, 0
+  {
+   COORD (880,260)
+  }
+  VTX  62, 0, 0
+  {
+   COORD (1020,260)
+  }
+  BUS  63, 0, 0
+  {
+   NET 31
+   VTX 61, 62
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  VTX  64, 0, 0
+  {
+   COORD (1020,680)
+  }
+  VTX  65, 0, 0
+  {
+   COORD (880,680)
+  }
+  BUS  66, 0, 0
+  {
+   NET 32
+   VTX 64, 65
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  VTX  67, 0, 0
+  {
+   COORD (880,720)
+  }
+  VTX  68, 0, 0
+  {
+   COORD (1020,720)
+  }
+  BUS  69, 0, 0
+  {
+   NET 33
+   VTX 67, 68
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+ }
+ 
+}
+

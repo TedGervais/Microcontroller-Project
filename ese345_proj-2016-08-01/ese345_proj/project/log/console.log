@@ -1,0 +1,396 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -O3 -work project -2002  $dsn/src/bit_half_adder.vhd $dsn/src/bit_full_adder_cg.vhd $dsn/src/cl_logic.vhd $dsn/src/cla_4.vhd $dsn/src/cla_16.vhd $dsn/src/sat_logic.vhd $dsn/src/mux_2_1.vhd $dsn/src/mux_16_2_1.vhd $dsn/src/cla_64.vhd $dsn/src/multiply.vhd $dsn/src/abs_diff.vhd $dsn/src/and_64.vhd $dsn/src/or_64.vhd $dsn/src/xor_64.vhd $dsn/src/count_lead_zero.vhd $dsn/src/count_ones.vhd $dsn/src/shift_left.vhd $dsn/src/alu_logic.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\My_Designs\ese345_proj\project\src\bit_half_adder.vhd
+# Compile Entity "bit_half_adder"
+# Compile Architecture "mixed" of Entity "bit_half_adder"
+# File: C:\My_Designs\ese345_proj\project\src\bit_full_adder_cg.vhd
+# Compile Entity "bit_full_adder_cg"
+# Compile Architecture "bit_full_adder_cg" of Entity "bit_full_adder_cg"
+# File: C:\My_Designs\ese345_proj\project\src\cl_logic.vhd
+# Compile Entity "cl_logic"
+# Compile Architecture "cl_logic" of Entity "cl_logic"
+# File: C:\My_Designs\ese345_proj\project\src\cla_4.vhd
+# Compile Entity "cla_4"
+# Compile Architecture "cla_4" of Entity "cla_4"
+# File: C:\My_Designs\ese345_proj\project\src\cla_16.vhd
+# Compile Entity "cla_16"
+# Compile Architecture "cla_16" of Entity "cla_16"
+# File: C:\My_Designs\ese345_proj\project\src\sat_logic.vhd
+# Compile Entity "sat_logic"
+# Compile Architecture "sat_logic" of Entity "sat_logic"
+# File: C:\My_Designs\ese345_proj\project\src\mux_2_1.vhd
+# Compile Entity "mux_2_1"
+# Compile Architecture "mux_2_1" of Entity "mux_2_1"
+# File: C:\My_Designs\ese345_proj\project\src\mux_16_2_1.vhd
+# Compile Entity "mux_16_2_1"
+# Compile Architecture "mux_16_2_1" of Entity "mux_16_2_1"
+# File: C:\My_Designs\ese345_proj\project\src\cla_64.vhd
+# Compile Entity "cla_64"
+# Compile Architecture "cla_64" of Entity "cla_64"
+# File: C:\My_Designs\ese345_proj\project\src\multiply.vhd
+# Compile Entity "multiply"
+# Compile Architecture "multiply" of Entity "multiply"
+# Warning: DAGGEN_0001: multiply.vhd : (51, 0): Process without explicit or implicit wait statement - possible infinite loop.
+# File: C:\My_Designs\ese345_proj\project\src\abs_diff.vhd
+# Compile Entity "abs_diff"
+# Compile Architecture "abs_diff" of Entity "abs_diff"
+# File: C:\My_Designs\ese345_proj\project\src\and_64.vhd
+# Compile Entity "and_64"
+# Compile Architecture "and_64" of Entity "and_64"
+# File: C:\My_Designs\ese345_proj\project\src\or_64.vhd
+# Compile Entity "or_64"
+# Compile Architecture "or_64" of Entity "or_64"
+# File: C:\My_Designs\ese345_proj\project\src\xor_64.vhd
+# Compile Entity "xor_64"
+# Compile Architecture "xor_64" of Entity "xor_64"
+# File: C:\My_Designs\ese345_proj\project\src\count_lead_zero.vhd
+# Compile Entity "count_lead_zero"
+# Compile Architecture "count_lead_zero" of Entity "count_lead_zero"
+# File: C:\My_Designs\ese345_proj\project\src\count_ones.vhd
+# Compile Entity "count_ones"
+# Compile Architecture "count_ones" of Entity "count_ones"
+# File: C:\My_Designs\ese345_proj\project\src\shift_left.vhd
+# Compile Entity "shift_left"
+# Compile Architecture "shift_left" of Entity "shift_left"
+# File: C:\My_Designs\ese345_proj\project\src\alu_logic.vhd
+# Compile Entity "alu_logic"
+# Compile Architecture "alu_logic" of Entity "alu_logic"
+# Compile success 0 Errors 1 Warnings  Analysis time :  3.0 [s]
+acom -O3 -work project -2002  $dsn/src/multiply.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\My_Designs\ese345_proj\project\src\multiply.vhd
+# Compile Entity "multiply"
+# Compile Architecture "multiply" of Entity "multiply"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+asim -O5 +access +r multiply multiply
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: For upgrade options please visit our University Program page at www.aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6980 kB (elbread=1023 elab2=5807 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\ese345_proj\project\src\wave.asdb
+#  4:02 AM, Monday, 1 December, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: multiply (multiply)
+# 1 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/ese345_proj/project/src/wave.asdb'.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /multiply,  Process: mult.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /multiply,  Process: mult.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /multiply,  Process: mult.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /multiply,  Process: mult.
+# KERNEL: stopped at time: 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -work project -2002  $dsn/src/multiply.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\My_Designs\ese345_proj\project\src\multiply.vhd
+# Compile Entity "multiply"
+# Compile Architecture "multiply" of Entity "multiply"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: For upgrade options please visit our University Program page at www.aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6980 kB (elbread=1023 elab2=5807 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\ese345_proj\project\src\wave.asdb
+#  4:02 AM, Monday, 1 December, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: multiply (multiply)
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/ese345_proj/project/src/wave.asdb'.
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /multiply,  Process: mult.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /multiply,  Process: mult.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /multiply,  Process: mult.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /multiply,  Process: mult.
+# KERNEL: stopped at time: 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /multiply,  Process: mult.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /multiply,  Process: mult.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /multiply,  Process: mult.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /multiply,  Process: mult.
+# KERNEL: stopped at time: 200 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -work project -2002  $dsn/src/multiply.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\My_Designs\ese345_proj\project\src\multiply.vhd
+# Compile Entity "multiply"
+# Compile Architecture "multiply" of Entity "multiply"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: For upgrade options please visit our University Program page at www.aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6980 kB (elbread=1023 elab2=5807 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\ese345_proj\project\src\wave.asdb
+#  4:04 AM, Monday, 1 December, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: multiply (multiply)
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/ese345_proj/project/src/wave.asdb'.
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /multiply,  Process: mult.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /multiply,  Process: mult.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /multiply,  Process: mult.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /multiply,  Process: mult.
+# KERNEL: stopped at time: 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -work project -2002  $dsn/src/multiply.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\My_Designs\ese345_proj\project\src\multiply.vhd
+# Compile Entity "multiply"
+# Compile Architecture "multiply" of Entity "multiply"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: For upgrade options please visit our University Program page at www.aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6980 kB (elbread=1023 elab2=5807 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\ese345_proj\project\src\wave.asdb
+#  4:05 AM, Monday, 1 December, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: multiply (multiply)
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/ese345_proj/project/src/wave.asdb'.
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /multiply,  Process: mult.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /multiply,  Process: mult.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /multiply,  Process: mult.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /multiply,  Process: mult.
+# KERNEL: stopped at time: 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -work project -2002  $dsn/src/multiply.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\My_Designs\ese345_proj\project\src\multiply.vhd
+# Compile Entity "multiply"
+# Compile Architecture "multiply" of Entity "multiply"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: For upgrade options please visit our University Program page at www.aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5954 kB (elbread=1023 elab2=4781 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\ese345_proj\project\src\wave.asdb
+#  4:14 AM, Monday, 1 December, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: multiply (multiply)
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/ese345_proj/project/src/wave.asdb'.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+#  Simulation has been stopped
+acom -O3 -work project -2002  $dsn/src/shft_left.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\My_Designs\ese345_proj\project\src\shft_left.vhd
+# Compile Entity "shft_left"
+# Compile Architecture "shft_left" of Entity "shft_left"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -O3 -work project -2002  $dsn/src/alu.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\My_Designs\ese345_proj\project\src\alu.vhd
+# Compile Entity "alu"
+# Error: COMP96_0018: alu.vhd : (34, 2): Identifier expected.
+# Compile Architecture "alu" of Entity "alu"
+# Error: COMP96_0015: alu.vhd : (46, 28): ':' expected.
+# Error: COMP96_0018: alu.vhd : (46, 32): Identifier expected.
+# Error: COMP96_0019: alu.vhd : (88, 2): Keyword 'end' expected.
+# Error: COMP96_0016: alu.vhd : (88, 7): Design unit declaration expected.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -work project -2002  $dsn/src/alu.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\My_Designs\ese345_proj\project\src\alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "alu" of Entity "alu"
+# Error: COMP96_0015: alu.vhd : (46, 28): ':' expected.
+# Error: COMP96_0018: alu.vhd : (46, 32): Identifier expected.
+# Error: COMP96_0019: alu.vhd : (88, 2): Keyword 'end' expected.
+# Error: COMP96_0016: alu.vhd : (88, 7): Design unit declaration expected.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -work project -2002  $dsn/src/alu.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\My_Designs\ese345_proj\project\src\alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "alu" of Entity "alu"
+# Error: COMP96_0015: alu.vhd : (46, 28): ':' expected.
+# Error: COMP96_0018: alu.vhd : (46, 32): Identifier expected.
+# Error: COMP96_0019: alu.vhd : (88, 2): Keyword 'end' expected.
+# Error: COMP96_0016: alu.vhd : (88, 7): Design unit declaration expected.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -work project -2002  $dsn/src/alu.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\My_Designs\ese345_proj\project\src\alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "alu" of Entity "alu"
+# Error: COMP96_0015: alu.vhd : (46, 28): ':' expected.
+# Error: COMP96_0018: alu.vhd : (46, 32): Identifier expected.
+# Error: COMP96_0019: alu.vhd : (88, 2): Keyword 'end' expected.
+# Error: COMP96_0016: alu.vhd : (88, 7): Design unit declaration expected.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -work project -2002  $dsn/src/alu.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\My_Designs\ese345_proj\project\src\alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "alu" of Entity "alu"
+# Error: COMP96_0019: alu.vhd : (88, 2): Keyword 'end' expected.
+# Error: COMP96_0016: alu.vhd : (88, 7): Design unit declaration expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -work project -2002  $dsn/src/alu.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\My_Designs\ese345_proj\project\src\alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "alu" of Entity "alu"
+# Error: COMP96_0367: alu.vhd : (73, 6): Improper array length (3). Expected length is 64.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -work project -2002  $dsn/src/alu.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\My_Designs\ese345_proj\project\src\alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "alu" of Entity "alu"
+# Error: COMP96_0367: alu.vhd : (73, 6): Improper array length (1). Expected length is 64.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -work project -2002  $dsn/src/alu.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\My_Designs\ese345_proj\project\src\alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "alu" of Entity "alu"
+# Error: COMP96_0077: alu.vhd : (73, 6): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -work project -2002  $dsn/src/alu.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\My_Designs\ese345_proj\project\src\alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "alu" of Entity "alu"
+# Error: COMP96_0367: alu.vhd : (73, 6): Improper array length (63). Expected length is 64.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -work project -2002  $dsn/src/alu.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\My_Designs\ese345_proj\project\src\alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "alu" of Entity "alu"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
